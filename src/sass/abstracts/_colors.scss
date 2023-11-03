@@ -1,0 +1,54 @@
+// my colors
+$ebony-clay: hsl(224, 18%, 17%);
+$pale-teal: hsl(149, 61%, 69%);
+$pickled-bluewood: hsl(226, 25%, 27%);
+$shuttle-gray: hsl(204, 8%, 36%);
+$white: hsl(0, 0%, 100%);
+
+// global color tokens
+$-clr-white: hsl(0 0% 100%);
+
+$-clr-blue-gray-500: hsl(204, 8%, 36%);
+$-clr-blue-gray-700: hsl(226, 25%, 27%);
+$-clr-blue-gray-900: hsl(224, 18%, 17%);
+
+$-clr-mint-200: hsl(149, 61%, 90%);
+$-clr-mint-300: hsl(149, 61%, 80%);
+$-clr-mint-400: hsl(149, 61%, 69%);
+$-clr-mint-500: hsl(149, 61%, 60%);
+$-clr-mint-600: hsl(149, 61%, 50%);
+$-clr-mint-700: hsl(149, 61%, 40%);
+$-clr-mint-800: hsl(149, 61%, 30%);
+
+
+$dark: (
+  "neutral": (
+    "900": $-clr-white,
+    "500": $-clr-blue-gray-500,
+    "300": $-clr-blue-gray-700,
+    "100": $-clr-blue-gray-900,
+  ),
+  "accent": (
+    "800": $-clr-mint-800,
+    "700": $-clr-mint-700,
+    "600": $-clr-mint-600,
+    "500": $-clr-mint-500,
+    "400": $-clr-mint-400,
+    "300": $-clr-mint-300,
+    "200": $-clr-mint-200,
+  ),
+);
+
+// contextual color tokens
+$color-neutral-100: var(--neutral-100);
+$color-neutral-300: var(--neutral-300);
+$color-neutral-500: var(--neutral-500);
+$color-neutral-900: var(--neutral-900);
+
+$color-accent-200: var(--accent-200);
+$color-accent-300: var(--accent-300);
+$color-accent-400: var(--accent-400);
+$color-accent-500: var(--accent-500);
+$color-accent-600: var(--accent-600);
+$color-accent-700: var(--accent-700);
+$color-accent-800: var(--accent-800);

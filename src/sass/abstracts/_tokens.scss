@@ -1,0 +1,120 @@
+@use "colors" as *;
+@use "fluid-sizes" as *;
+@use "sizes" as *;
+@use "typography" as *;
+
+$active-theme: $dark;
+$enable-media-query-dark-mode: false;
+
+// contextual
+$color-text-default: $color-neutral-900;
+$color-background-default: $color-neutral-100;
+$color-text-interactive-default: $color-accent-400;
+$color-text-interactive-hover: $color-accent-500;
+
+// set to 0 to disable
+$letter-spacing-loose: 0;
+
+$border-radius-1: $size-8;
+$border-radius-2: $size-16;
+
+$box-shadow-1: 
+  0px 6px 5px rgb(0, 0, 0, 0.012),
+  0px 22px 18px rgb(0, 0, 0, 0.018),
+  0px 100px 80px rgb(0, 0, 0, 0.03);
+
+$box-shadow-2: 
+  0px 6px 5px rgb(0, 0, 0, 0.016),
+  0px 22px 18px rgb(0, 0, 0, 0.024),
+  0px 100px 80px rgb(0, 0, 0, 0.04);
+
+$box-shadow-3: 
+  0px 6px 5px rgb(0, 0, 0, 0.02), 
+  0px 22px 18px rgb(0, 0, 0, 0.03),
+  0px 100px 80px rgb(0, 0, 0, 0.05);
+
+$box-shadow-4: 
+  0px 6px 5px rgb(0, 0, 0, 0.03), 
+  0px 22px 18px rgb(0, 0, 0, 0.042),
+  0px 100px 80px rgb(0, 0, 0, 0.07);
+
+$box-shadow-5: 
+  0px 6px 5px rgb(0, 0, 0, 0.04), 
+  0px 22px 18px rgb(0, 0, 0, 0.06),
+  0px 100px 80px rgb(0, 0, 0, 0.1);
+
+// body
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-400;
+$body-line-height: 1.55;
+$body-font-weight: $font-weight-book;
+$body-text-color: $color-text-default;
+$body-background-color: $color-background-default;
+
+$link-color: $color-text-interactive-default;
+$link-color-hover: $color-text-interactive-hover;
+
+$heading-font-family: $font-family-accent;
+$heading-color-default: $color-accent-400;
+$heading-font-weight: $font-weight-bold;
+$heading-letter-spacing: $letter-spacing-loose;
+$heading-line-height: 1.1;
+$heading-text-transform: none;
+
+$heading-1-font-size: $font-size-900;
+$heading-1-color: $heading-color-default;
+$heading-2-font-size: $font-size-800;
+$heading-2-color: $heading-color-default;
+$heading-3-font-size: $font-size-700;
+$heading-3-color: $heading-color-default;
+
+// layout
+$grid-gap: $fluid-size-m;
+$flex-group-gap: $fluid-size-m;
+
+$section-padding-block: $fluid-size-2xl-3xl;
+
+$container-min-margin-inline: $fluid-size-s;
+$container-max-width: 64rem;
+$container-max-width-narrow: 40rem;
+$container-max-width-wide: 75rem;
+
+// site header
+$site-header-background-color: $color-neutral-500;
+$site-header-color: $color-neutral-900;
+$site-header-padding: $fluid-size-2xs 0;
+$site-header-margin: 0;
+$site-header-jusitifcation-small-screens: space-between;
+$site-header-jusitifcation-large-screens: space-between;
+$site-header-alignment: center;
+$site-header-text-transform: uppercase;
+
+// navigation
+$navigation-color: $site-header-color;
+$navigation-color-hover: $color-accent-400;
+$navigation-font-size: $font-size-500;
+$navigation-gap: $fluid-size-l-xl;
+$navigation-link-text-decoration: none;
+$navigation-font-family: $body-font-family;
+$navigation-font-weight: $font-weight-semi-bold;
+
+// site footer
+$footer-background-color: $color-neutral-500;
+$footer-text-color: $color-neutral-900;
+$footer-link-color: $color-accent-400;
+$footer-link-color-hover: $color-accent-500;
+$footer-link-text-decoration: none;
+
+// buttons
+$button-font-family: $body-font-family;
+$button-font-size: $font-size-500;
+$button-font-weight: $font-weight-semi-bold;
+$button-text-transform: none;
+$button-padding: 0.75em 2em;
+$button-border: 2px solid;
+$button-border-radius: $border-radius-1;
+
+$button-accent-color: $color-accent-400;
+$button-accent-background: $color-accent-400;
+$button-accent-color-hover: $color-accent-500;
+$button-accent-background-hover: transparent;
