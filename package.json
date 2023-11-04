@@ -14,8 +14,13 @@
   },
   "dependencies": {
     "gatsby": "^5.12.4",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-sass": "^6.12.3",
+    "gatsby-source-filesystem": "^5.12.1",
+    "gatsby-transformer-remark": "^6.12.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5"
   },
   "repository": {
     "type": "git",
