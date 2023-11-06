@@ -11,6 +11,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,7 +25,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
+          include: /src\/assets\/icons/,
         }
       }
     },

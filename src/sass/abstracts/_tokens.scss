@@ -69,12 +69,12 @@ $heading-3-font-size: $font-size-700;
 $heading-3-color: $heading-color-default;
 
 // layout
-$grid-gap: $fluid-size-m;
+$grid-gap: $fluid-size-l;
 $flex-group-gap: $fluid-size-m;
 
 $section-padding-block: $fluid-size-2xl-3xl;
 
-$container-min-margin-inline: $fluid-size-s;
+$container-min-margin-inline: $fluid-size-m;
 $container-max-width: 64rem;
 $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
@@ -82,7 +82,7 @@ $container-max-width-wide: 75rem;
 // site header
 $site-header-background-color: $color-neutral-500;
 $site-header-color: $color-neutral-900;
-$site-header-padding: $fluid-size-2xs 0;
+$site-header-padding: 0;
 $site-header-margin: 0;
 $site-header-jusitifcation-small-screens: space-between;
 $site-header-jusitifcation-large-screens: space-between;

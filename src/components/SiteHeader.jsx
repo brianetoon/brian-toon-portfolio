@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-// import Icon from '../assets/icons/twitter.svg'
+import Logo from '../assets/icons/logo.svg';
 
 const SiteHeader = () => {
   return (
@@ -8,8 +8,7 @@ const SiteHeader = () => {
       <div className="container">
         <div className="site-header__inner">
           <Link to="/" className="site-header__brand">
-            {/* <img src="/logo.svg" alt="BT logo" /> */}
-            {/* <Icon width="100%" /> */}
+            <Logo />
           </Link>
           <nav>
             <ul className="nav | flex-group">

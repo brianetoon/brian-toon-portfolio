@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+.about {
+  &__portrait {
+    max-width: 20rem;
+    margin-inline: auto;
+
+    padding: 0.8rem;
+    border: 2px solid white;
+    border-radius: 12px;
+  }
+
+  &__tech-list {
+    margin-inline-start: $fluid-size-l;
+
+    li::marker {
+      color: $color-accent-400;
+    }
+
+    @include mq(medium) {
+      columns: 2;
+      width: 20rem;
+    }
+  }
+  
+  &__content {
+    display: grid;
+    gap: var(--grid-gap, $grid-gap);
+
+    @include mq(medium) {
+      align-items: start;
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+}
