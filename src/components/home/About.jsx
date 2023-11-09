@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="about | section bg-neutral-300">
       <div className="container flow">
-        <header className="section-header flow">
+        <header className="section-header | flow">
           <StaticImage 
             src="../../assets/images/about.png"
             alt="Line drawing of a laptop computer, desktop computer, headphones, book and a coffee mug"
@@ -21,7 +21,7 @@ export default function About() {
             <p>If you're looking for a front-end developer to join your team I would love to hear from you. Please feel free to contact me to learn more about my experience.</p>
           </div>
 
-          <div className="about__portrait">
+          <div className="about__portrait | border-frame">
             <StaticImage
               className="border-radius-1"
               src="../../assets/images/napoleon.jpg"

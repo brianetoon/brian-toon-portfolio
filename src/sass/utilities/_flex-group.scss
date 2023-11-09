@@ -6,8 +6,15 @@
   column-gap: var(--flex-column-gap, #{$flex-group-gap});
   row-gap: var(--flex-row-gap, calc($flex-group-gap / 2));
   width: fit-content;
+  // align-items: center;
+
+  &.mx-auto {
+    justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
+  }
 }
 
 .flex-group.mx-auto {
-  justify-content: center;
 }

@@ -18,3 +18,9 @@
     $heading-3-color
   );
 }
+.heading-4 {
+  @include heading(
+    $heading-4-font-size,
+    $heading-4-color
+  );
+}

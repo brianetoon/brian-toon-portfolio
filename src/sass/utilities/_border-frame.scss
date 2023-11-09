@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.border-frame {
+  padding: $fluid-size-xs;
+  border: 2.5px solid $color-neutral-900;
+  border-radius: $border-radius-2;
+}

@@ -16,7 +16,7 @@ $color-text-interactive-hover: $color-accent-500;
 $letter-spacing-loose: 0;
 
 $border-radius-1: $size-8;
-$border-radius-2: $size-16;
+$border-radius-2: $size-12;
 
 $box-shadow-1: 
   0px 6px 5px rgb(0, 0, 0, 0.012),
@@ -46,7 +46,7 @@ $box-shadow-5:
 // body
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-400;
-$body-line-height: 1.55;
+$body-line-height: 1.6;
 $body-font-weight: $font-weight-book;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
@@ -54,11 +54,13 @@ $body-background-color: $color-background-default;
 $link-color: $color-text-interactive-default;
 $link-color-hover: $color-text-interactive-hover;
 
+$icon-color: $body-text-color;
+
 $heading-font-family: $font-family-accent;
 $heading-color-default: $color-accent-400;
 $heading-font-weight: $font-weight-bold;
 $heading-letter-spacing: $letter-spacing-loose;
-$heading-line-height: 1.1;
+$heading-line-height: 1.2;
 $heading-text-transform: none;
 
 $heading-1-font-size: $font-size-900;
@@ -67,10 +69,12 @@ $heading-2-font-size: $font-size-800;
 $heading-2-color: $heading-color-default;
 $heading-3-font-size: $font-size-700;
 $heading-3-color: $heading-color-default;
+$heading-4-font-size: $font-size-600;
+$heading-4-color: $heading-color-default;
 
 // layout
 $grid-gap: $fluid-size-l;
-$flex-group-gap: $fluid-size-m;
+$flex-group-gap: $fluid-size-s;
 
 $section-padding-block: $fluid-size-2xl-3xl;
 

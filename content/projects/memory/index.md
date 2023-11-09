@@ -4,7 +4,8 @@ tech:
    - 'React'
    - 'GSAP'
 github: '#'
-external: '#'
+liveUrl: '#'
+image: './memory.png'
 featured: true
 position: 2
 ---

@@ -4,7 +4,8 @@ tech:
    - 'Vue'
    - 'GSAP'
 github: 'https://github.com/brianetoon/Lambdoge'
-external: '#'
+liveUrl: '#'
+image: './lambdoge.png'
 featured: true
 position: 4
 ---

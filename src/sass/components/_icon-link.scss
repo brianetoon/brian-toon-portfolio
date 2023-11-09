@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.icon-link {
+  width: $fluid-size-m;
+  fill: $icon-color;
+
+  &:is(:hover, :focus) {
+    fill: $color-accent-400;
+  }
+}

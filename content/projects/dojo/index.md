@@ -4,7 +4,8 @@ tech:
    - 'React'
    - 'Firebase'
 github: '#'
-external: '#'
+liveUrl: '#'
+image: './dojo.png'
 featured: true
 position: 3
 ---

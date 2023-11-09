@@ -28,11 +28,16 @@ export const query = graphql`
         id
         html
         frontmatter {
-          external
+          liveUrl
           github
           position
           tech
           title
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
         }
       }
     }

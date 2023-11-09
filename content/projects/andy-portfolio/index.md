@@ -4,7 +4,8 @@ tech:
    - 'Vue'
    - 'GSAP'
 github: 'https://github.com/brianetoon/andy'
-external: '#'
+liveUrl: '#'
+image: './andy-portfolio.png'
 featured: true
 position: 1
 ---

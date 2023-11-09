@@ -4,10 +4,6 @@
   &__portrait {
     max-width: 20rem;
     margin-inline: auto;
-
-    padding: 0.8rem;
-    border: 2px solid white;
-    border-radius: 12px;
   }
 
   &__tech-list {
@@ -18,8 +14,8 @@
     }
 
     @include mq(medium) {
+      max-width: 20rem;
       columns: 2;
-      width: 20rem;
     }
   }
   

@@ -3,7 +3,8 @@ title: 'Design Showcase Portfolio with Vue'
 tech:
    - 'Vue'
 github: 'https://github.com/brianetoon/kaytoon'
-external: 'https://kaytoondesign.com/'
+liveUrl: 'https://kaytoondesign.com/'
+image: './kay-portfolio.png'
 featured: true
 position: 5
 ---

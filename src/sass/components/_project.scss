@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.project {
+  --flow-spacer: #{$fluid-size-2xl};
+  // max-width: 28rem;
+  // margin-inline: auto;
+
+  & > * {
+    --flow-spacer: 1.25em;
+  }
+}
