@@ -16,9 +16,9 @@ export default function About() {
         
         <div className="about__content">
           <div className="about__info | flow">
-            <p>Hi there, my name is Brian and I'm a front-end developer who's passionate about leveraging modern web technologies to create digital experiences that work seamlessly and look great.</p>
-            <p>I believe web development is an art form that requires both creativity and and technical expertise. As a front-end developer, my strengths lie in my ability to bring ideas and designs to life through digital experiences. My passion for this work comes from constant learning and growth opportunities that come with being a developer. My goal is to continue improving my skills as a developer and staying up-to-date with the latest web technologies.</p>
-            <p>If you're looking for a front-end developer to join your team I would love to hear from you. Please feel free to contact me to learn more about my experience.</p>
+            <p>Hi there, my name is Brian and I'm a front-end developer who's passionate about leveraging modern web technologies to create finished products that are accessible, work seamlessly and look great on any device.</p>
+            <p>I believe web development is an art form that requires both creativity and technical expertise. As a front-end developer, my strengths lie in my ability to bring ideas and designs to life as digital experiences.</p>
+            <p>My passion for this comes from the continued learning and constant growth opportunities that come with being a developer. My goal is to continue improving my skills and staying up to date with the latest technologies.</p>
           </div>
 
           <div className="about__portrait | border-frame">
@@ -42,7 +42,6 @@ export default function About() {
             </ul>
           </div>
         </div>
-
       </div>
     </section>
   )

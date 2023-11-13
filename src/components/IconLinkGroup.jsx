@@ -9,7 +9,6 @@ const IconLinkGroup = ({ links }) => {
           key={link.url}
           url={link.url} 
           name={link.name} 
-          className={'icon-link'} 
         />
       ))}
     </div>

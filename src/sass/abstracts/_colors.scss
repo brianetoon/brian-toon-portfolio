@@ -7,6 +7,7 @@ $white: hsl(0, 0%, 100%);
 
 // global color tokens
 $-clr-white: hsl(0 0% 100%);
+$-clr-almost-white: hsl(0 0% 92%);
 
 $-clr-blue-gray-500: hsl(204, 8%, 36%);
 $-clr-blue-gray-700: hsl(226, 25%, 27%);
@@ -23,7 +24,8 @@ $-clr-mint-800: hsl(149, 61%, 30%);
 
 $dark: (
   "neutral": (
-    "900": $-clr-white,
+    "1000": $-clr-white,
+    "900": $-clr-almost-white,
     "500": $-clr-blue-gray-500,
     "300": $-clr-blue-gray-700,
     "100": $-clr-blue-gray-900,
@@ -44,6 +46,7 @@ $color-neutral-100: var(--neutral-100);
 $color-neutral-300: var(--neutral-300);
 $color-neutral-500: var(--neutral-500);
 $color-neutral-900: var(--neutral-900);
+$color-neutral-1000: var(--neutral-1000);
 
 $color-accent-200: var(--accent-200);
 $color-accent-300: var(--accent-300);

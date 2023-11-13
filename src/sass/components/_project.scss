@@ -1,11 +1,38 @@
 @use "../abstracts" as *;
 
 .project {
-  --flow-spacer: #{$fluid-size-2xl};
-  // max-width: 28rem;
-  // margin-inline: auto;
+  --flow-spacer: #{$fluid-size-2xl-3xl};
+  display: grid;
+  gap: $fluid-size-s;
 
   & > * {
-    --flow-spacer: 1.25em;
+    --flow-spacer: #{$fluid-size-s};
+  }
+
+  @include mq(medium){
+    grid-template-columns: 4fr 5fr;
+    grid-column-gap: $grid-gap;
+    grid-template-areas: 
+      ".     title"
+      "media description"
+    ;
+
+    &:nth-child(even) {
+      grid-template-columns: 5fr 4fr;
+      grid-template-areas: 
+        "title       ."
+        "description media"
+      ;
+    }
+
+    &__title {
+      grid-area: title;
+    }  
+    &__media {
+      grid-area: media;
+    }  
+    &__description {
+      grid-area: description;
+    }
   }
 }
