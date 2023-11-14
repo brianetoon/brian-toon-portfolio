@@ -7,7 +7,6 @@ import {
   IconTwitter 
 } from '../assets/icons';
 
-
 const IconLink = ({ name, url, className }) => {
 
   const renderIcon = () => {

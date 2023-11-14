@@ -4,7 +4,7 @@ tech:
    - 'React'
    - 'Firebase'
 github: '#'
-liveUrl: '#'
+liveUrl: 'https://the-dojo-cc386.web.app/'
 image: './dojo.png'
 featured: true
 position: 3

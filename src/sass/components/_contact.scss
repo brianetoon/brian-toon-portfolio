@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.contact {
+  &__content {
+    display: grid;
+    gap: $grid-gap;
+    align-items: center;
+
+    @include mq(medium) {
+      grid-template-columns: 4fr 5fr;
+      grid-template-areas: "image info";
+
+      .contact__image {
+        grid-area: image;
+      }
+      .contact__info {
+        grid-area: info;
+      }
+    }
+  }
+}

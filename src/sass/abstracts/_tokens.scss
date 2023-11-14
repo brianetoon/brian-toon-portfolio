@@ -73,13 +73,13 @@ $heading-4-font-size: $font-size-600;
 $heading-4-color: $heading-color-default;
 
 // layout
-$grid-gap: $fluid-size-l;
+$grid-gap: $fluid-size-l-xl;
 $flex-group-gap: $fluid-size-s;
 
 $section-padding-block: $fluid-size-2xl-3xl;
 
-$container-min-margin-inline: $fluid-size-m-l;
-$container-max-width: 64rem;
+$container-min-margin-inline: $fluid-size-l;
+$container-max-width: 65rem;
 $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
 
@@ -114,11 +114,13 @@ $button-font-family: $body-font-family;
 $button-font-size: $font-size-500;
 $button-font-weight: $font-weight-semi-bold;
 $button-text-transform: none;
-$button-padding: 0.75em 2em;
-$button-border: 2px solid;
+$button-padding: 0.5em 2em;
+$button-border-style: 2.5px solid;
+$button-border-color: currentColor;
 $button-border-radius: $border-radius-1;
 
 $button-accent-color: $color-accent-400;
-$button-accent-background: $color-accent-400;
-$button-accent-color-hover: $color-accent-500;
-$button-accent-background-hover: transparent;
+$button-accent-background: none;
+$button-accent-color-hover: $color-neutral-100;
+$button-accent-background-hover: $color-accent-400;
+$button-accent-border-color-hover: $color-accent-400;

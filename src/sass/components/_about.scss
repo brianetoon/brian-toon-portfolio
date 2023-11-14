@@ -22,11 +22,11 @@
   &__content {
     display: grid;
     gap: var(--grid-gap, $grid-gap);
+    grid-row-gap: $fluid-size-l;
 
     @include mq(medium) {
       align-items: start;
       grid-template-columns: 2fr 1fr;
     }
   }
-  
 }

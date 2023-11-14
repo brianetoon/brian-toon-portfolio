@@ -14,8 +14,8 @@ $font-sizes: (
   '400': clamp(1.00rem, calc(0.91rem + 0.44vw), 1.25rem),
   // Step 1: 19.20px → 25.00px
   '500': clamp(1.20rem, calc(1.06rem + 0.64vw), 1.56rem),
-  // Step 2: 23.04px → 31.25px
-  '600': clamp(1.44rem, calc(1.25rem + 0.91vw), 1.95rem),
+  // Step 2: 23.04px → 31.04px
+  '600': clamp(1.44rem, calc(1.25rem + 0.91vw), 1.94rem),
   // Step 3: 27.65px → 39.06px
   '700': clamp(1.73rem, calc(1.46rem + 1.27vw), 2.44rem),
   // Step 4: 33.18px → 48.83px

@@ -3,17 +3,18 @@
 .button {
   display: inline-flex;
   cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
+  text-decoration : none;
+  background: none;
   line-height: 1;
+  color: $color-neutral-1000;
   font-family: $button-font-family;
   font-size: $button-font-size;
   text-transform: $button-text-transform;
   font-weight: $button-font-weight;
   padding: $button-padding;
-  border: $button-border;
+  border: $button-border-style $button-border-color;
   border-radius: $button-border-radius;
-  transition: 275ms ease;
+  // transition: 275ms ease;
 
   &[data-type="accent"] {
     background-color: $button-accent-background;
@@ -22,6 +23,7 @@
     &:is(:hover, :focus) {
       background-color: $button-accent-background-hover;
       color: $button-accent-color-hover;
+      border: $button-border-style $button-accent-border-color-hover;
     }
   }
 }

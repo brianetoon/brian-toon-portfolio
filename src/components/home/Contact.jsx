@@ -1,12 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Contact() {
   return (
     <section id="contact" className="contact | section bg-neutral-300">
-      <div className="container">
-        <h2 className="heading-1">Contact</h2>
-        <p>Brief sentence or two</p>
-        <button>contact me</button>
+      <div className="contact__content | container">
+        <div className="contact__info | flow">
+          <h2 className="heading-1">Contact</h2>
+          <p>If you're looking for a front-end developer to join your team, I would like to hear from you. Please feel free to contact me to learn more about my experience.</p>
+          <button className="button" data-type="accent">Email Me</button>
+        </div>
+        <div className="contact__image">
+          <StaticImage
+            src="../../assets/images/contact.png"
+            alt="Line drawing of a laptop computer, desktop computer, headphones, book and a coffee mug"
+            placeholder="none"
+          />
+        </div>
       </div>
     </section>
   )
