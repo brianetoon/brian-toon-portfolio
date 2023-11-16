@@ -1,8 +1,8 @@
 @use "../abstracts" as *;
 
 .button {
-  display: inline-flex;
   cursor: pointer;
+  display: inline-flex;
   text-decoration : none;
   background: none;
   line-height: 1;
@@ -21,8 +21,8 @@
     color: $button-accent-color;
 
     &:is(:hover, :focus) {
+      @include knockout-text;
       background-color: $button-accent-background-hover;
-      color: $button-accent-color-hover;
       border: $button-border-style $button-accent-border-color-hover;
     }
   }

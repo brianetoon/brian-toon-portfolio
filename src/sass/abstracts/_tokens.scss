@@ -54,7 +54,7 @@ $body-background-color: $color-background-default;
 $link-color: $color-text-interactive-default;
 $link-color-hover: $color-text-interactive-hover;
 
-$icon-color: $body-text-color;
+$icon-color: $color-neutral-1000;
 
 $heading-font-family: $font-family-accent;
 $heading-color-default: $color-accent-400;
@@ -105,8 +105,10 @@ $navigation-font-weight: $font-weight-semi-bold;
 // site footer
 $footer-background-color: $color-neutral-500;
 $footer-text-color: $color-neutral-900;
-$footer-link-color: $color-accent-400;
-$footer-link-color-hover: $color-accent-500;
+$footer-padding: $fluid-size-m 0;
+$footer-link-color: $color-neutral-1000;
+$footer-link-font-weight: $font-weight-semi-bold;
+$footer-link-color-hover: $color-accent-400;
 $footer-link-text-decoration: none;
 
 // buttons
@@ -121,6 +123,6 @@ $button-border-radius: $border-radius-1;
 
 $button-accent-color: $color-accent-400;
 $button-accent-background: none;
-$button-accent-color-hover: $color-neutral-100;
+$button-accent-color-hover: $color-neutral-300;
 $button-accent-background-hover: $color-accent-400;
 $button-accent-border-color-hover: $color-accent-400;

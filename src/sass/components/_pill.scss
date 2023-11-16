@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .pill {
+  @include knockout-text;
   display: inline-block;
   padding: 0.4em 0.6em;
   font-size: $font-size-400;
@@ -8,7 +9,6 @@
   line-height: 1;
   white-space: nowrap;
   text-align: center;
-  color: $color-neutral-100;
   background-color: $color-accent-400;
-  border-radius: 100rem;
+  border-radius: 100vw;
 }

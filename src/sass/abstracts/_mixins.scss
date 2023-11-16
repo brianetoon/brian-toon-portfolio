@@ -34,7 +34,8 @@
   line-height: $heading-line-height;
 }
 
-@mixin linear-gradient($deg, $colors...) {
-  background-image: linear-gradient($deg, $colors);
+@mixin knockout-text() {
+  color: black;
+  mix-blend-mode: lighten;
 }
   

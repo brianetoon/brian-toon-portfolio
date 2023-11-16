@@ -1,6 +1,15 @@
 @use "../abstracts" as *;
 
 .contact {
+  &__image {
+    max-width: 25rem;
+    margin-inline: auto;
+
+    @include mq(medium) {
+      max-width: 100%;
+    }
+  }
+
   &__content {
     display: grid;
     gap: $grid-gap;

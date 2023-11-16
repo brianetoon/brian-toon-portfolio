@@ -3,14 +3,28 @@
 .site-footer {
   background-color: $footer-background-color;
   color: $footer-text-color;
+  padding: $footer-padding;
 
   a {
     color: $footer-link-color;
     text-decoration: $footer-link-text-decoration;
+    font-weight: $footer-link-font-weight;
     letter-spacing: $letter-spacing-loose;
 
     &:is(:hover, :focus) {
       color: $footer-link-color-hover;
+    }
+  }
+
+  &__inner {
+    gap: $fluid-size-xs;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(large) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
