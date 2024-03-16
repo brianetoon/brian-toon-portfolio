@@ -4,14 +4,39 @@
   position: sticky;
   top: 0;
   z-index: 9;
-
   color: $site-header-color;
   background-color: $site-header-background-color;
   padding: $site-header-padding;
   text-transform: $site-header-text-transform;
+  overflow-x: clip;
+
+  &__nav-toggle {
+    position: absolute;
+    right: $container-min-margin-inline;
+    background: transparent;
+    cursor: pointer;
+    z-index: 999;
+    border: 0;
+    color: white;
+
+    @include mq(medium) {
+      display: none;
+    }
+  }
 
   &__brand {
-    max-width: $fluid-size-3xl;
+    --logo-stroke-color: #{$site-header-color};
+    z-index: 99;
+    cursor: pointer;
+
+    &:hover {
+      --logo-stroke-color: #{$site-header-color-hover};
+    }
+
+    svg {
+      width: $fluid-size-2xl-3xl;
+      height: auto;
+    }
   }
 
   &__inner {

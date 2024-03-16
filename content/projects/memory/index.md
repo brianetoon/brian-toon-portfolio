@@ -6,7 +6,7 @@ tech:
 github: '#'
 liveUrl: '#'
 image: './memory.png'
-featured: true
+featured: false
 position: 2
 ---
 

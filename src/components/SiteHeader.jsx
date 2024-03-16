@@ -1,23 +1,45 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Logo from '../assets/icons/logo.svg';
+import React, { useState } from "react";
+import Logo from "../assets/icons/logo.svg";
+import MobileNav from "./navigation/MobileNav";
+import PrimaryNav from "./navigation/PrimaryNav";
+import ScrollTo from "../animations/ScrollTo";
+import { useGSAP } from "@gsap/react";
+
 
 const SiteHeader = () => {
+  const [navIsExpanded, setNavIsExpanded] = useState(false);
+  const { contextSafe } = useGSAP();
+
+  const scroll = contextSafe((target) => {
+    ScrollTo(target, setNavIsExpanded(false));
+  });
+
   return (
     <header className="site-header">
       <div className="container">
         <div className="site-header__inner">
-          <Link to="/" className="site-header__brand">
+          <div 
+            className="site-header__brand" 
+            onClick={() => scroll(0, setNavIsExpanded(false))}
+          >
             <Logo />
-          </Link>
-          <nav>
-            <ul className="nav | flex-group">
-              <li><Link to="/#about">About</Link></li>
-              <li><Link to="/#projects">Projects</Link></li>
-              <li><Link to="/#contact">Contact</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-            </ul>
-          </nav>
+          </div>
+
+          <button 
+            className="site-header__nav-toggle"
+            aria-controls="mobile-navigation"
+            aria-expanded={navIsExpanded}
+            onClick={() => setNavIsExpanded(!navIsExpanded)}
+          >
+            <span>Menu</span>
+          </button>
+
+          <MobileNav 
+            navIsExpanded={navIsExpanded}
+            setNavIsExpanded={setNavIsExpanded}
+          />
+
+          <PrimaryNav />
         </div>
       </div>
     </header>

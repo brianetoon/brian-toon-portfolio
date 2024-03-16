@@ -4,17 +4,17 @@
 @use "breakpoints" as *;
 @use "tokens" as *;
 
-@mixin mq($size) {
+@mixin mq($size, $min-or-max: min-width) {
   @if map.has-key($breakpoints, $size) {
     $breakpoint: map-get($breakpoints, $size);
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (#{$min-or-max}: $breakpoint) {
       @content;
     }
   } @else if meta.type-of($size) == number {
     @if math.is-unitless($size) {
       @error 'when using a number with @mq() make sure to include a unit';
     } @else {
-      @media screen and (min-width: $size) {
+      @media screen and (#{$min-or-max}: $size) {
         @content;
       }
     }

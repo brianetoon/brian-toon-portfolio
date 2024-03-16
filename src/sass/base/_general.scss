@@ -1,9 +1,5 @@
 @use "../abstracts/" as *;
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: $body-font-family;
   font-weight: $body-font-weight;

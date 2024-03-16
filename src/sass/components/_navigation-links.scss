@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.navigation-links {
+  --flex-column-gap: #{$navigation-column-gap};
+  font-family: $navigation-font-family;
+  font-weight: $navigation-font-weight;
+  list-style: none;
+
+  &__item {
+    color: $navigation-color;
+    text-decoration: $navigation-link-text-decoration;
+    cursor: pointer;
+
+    &:is(:hover, :focus) {
+      color: $navigation-color-hover;
+    }
+  }
+
+  &[data-type="mobile"] {
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 6rem;
+  }
+}

@@ -2,6 +2,9 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { Layout, Hero, About, Projects, Contact } from '../components';
 import '../sass/main.scss';
+import gsap from 'gsap';
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function Home({ data }) {
   const projects = data.projects.nodes;

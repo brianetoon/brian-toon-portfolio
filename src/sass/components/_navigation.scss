@@ -1,17 +1,39 @@
 @use "../abstracts" as *;
 
-.nav {
-  --flex-column-gap: #{$navigation-gap};
-  list-style: none;
-  font-family: $navigation-font-family;
-  font-weight: $navigation-font-weight;
+.primary-navigation {
+  display: none;
 
-  a {
-    color: $navigation-color;
-    text-decoration: $navigation-link-text-decoration;
+  @include mq(medium) {
+    display: block;
+  }
+}
 
-    &:is(:hover, :focus) {
-      color: $navigation-color-hover;
-    }
+.mobile-navigation {
+  &__menu {
+    --flex-row-gap: #{$navigation-row-gap};
+    background-color: $navigation-background-color;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(65%, 20rem);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @include mq(medium) {
+    visibility: hidden;
   }
 }
