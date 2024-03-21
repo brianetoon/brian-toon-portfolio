@@ -37,7 +37,7 @@ export default function About() {
               <li>React</li>
               <li>Gatsby</li>
               <li>GraphQL</li>
-              <li>Framer-Motion</li>
+              <li>GSAP</li>
               <li>SCSS</li>
             </ul>
           </div>

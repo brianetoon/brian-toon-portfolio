@@ -15,9 +15,9 @@ export default function Hero() {
           />
         </div>
         <div className="flow">
-          <h1 className="heading-1 | no-wrap">Hi, I'm Brian ...</h1>
+          <h1 className="heading-1">Hi, I'm Brian</h1>
           <p>a web developer who loves turning ideas and designs into digital experiences.</p>
-          <p>I am a front-end developer with experience in creating visually appealing, accessible and responsive websites using modern web technologies like Vue, React and Gatsby.</p>
+          <p>I am a front-end developer with experience in creating visually appealing, accessible and responsive websites using modern web technologies like React, Vue and Gatsby.</p>
           <SocialLinks />
         </div>
       </div>

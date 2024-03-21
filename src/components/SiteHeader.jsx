@@ -1,17 +1,26 @@
 import React, { useState } from "react";
+import { navigate } from "gatsby";
+import { useLocation } from "@reach/router";
 import Logo from "../assets/icons/logo.svg";
 import MobileNav from "./navigation/MobileNav";
 import PrimaryNav from "./navigation/PrimaryNav";
+import Hamburger from "./navigation/Hamburger";
 import ScrollTo from "../animations/ScrollTo";
 import { useGSAP } from "@gsap/react";
+import { accessibleOnClick } from "../helpers/accessibleEventHandlers";
 
 
 const SiteHeader = () => {
   const [navIsExpanded, setNavIsExpanded] = useState(false);
   const { contextSafe } = useGSAP();
+  const location = useLocation();
 
   const scroll = contextSafe((target) => {
-    ScrollTo(target, setNavIsExpanded(false));
+    if (location.pathname !== "/") {
+      navigate('/');
+    } else {
+      ScrollTo(target, setNavIsExpanded(false));
+    }
   });
 
   return (
@@ -20,7 +29,7 @@ const SiteHeader = () => {
         <div className="site-header__inner">
           <div 
             className="site-header__brand" 
-            onClick={() => scroll(0, setNavIsExpanded(false))}
+            {...accessibleOnClick(() => scroll(0))}
           >
             <Logo />
           </div>
@@ -31,7 +40,7 @@ const SiteHeader = () => {
             aria-expanded={navIsExpanded}
             onClick={() => setNavIsExpanded(!navIsExpanded)}
           >
-            <span>Menu</span>
+            <Hamburger navIsExpanded={navIsExpanded} />
           </button>
 
           <MobileNav 

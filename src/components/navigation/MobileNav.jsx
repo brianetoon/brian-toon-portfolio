@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import NavLinks from "./NavLinks";
+import SocialLinks from "../SocialLinks";
 
 const MobileNav = ({ navIsExpanded, setNavIsExpanded }) => {
   const tl = useRef();
@@ -15,12 +16,11 @@ const MobileNav = ({ navIsExpanded, setNavIsExpanded }) => {
     gsap.set(menu.current, {
       x: "100%"
     });
-    gsap.set(links.current, {
-      opacity: 0,
-      y: 25
-    });
 
-    tl.current = gsap.timeline({ defaults: { duration: 0.25 } })
+    tl.current = gsap.timeline({ 
+      paused: true,
+      defaults: { duration: 0.25 } 
+    })
       .to(menu.current, {
         x: 0
       })
@@ -28,31 +28,33 @@ const MobileNav = ({ navIsExpanded, setNavIsExpanded }) => {
         opacity: 1,
         visibility: "visible"
       }, "<")
-      .to(links.current, {
-        opacity: 1,
-        y: 0
-      });
+      .from([links.current, ".social-links"], {
+        opacity: 0,
+        y: 25
+      })
 
   }, { scope: container })
 
   useEffect(() => {
-    tl.current.reversed(!navIsExpanded);
+    navIsExpanded ? tl.current.play() : tl.current.reverse(); 
   }, [navIsExpanded]);
 
   return (
     <div className="mobile-navigation" ref={container}>
-      <nav className="mobile-navigation__menu" ref={menu}>
+      <nav className="mobile-navigation__menu | flow" ref={menu}>
         <NavLinks 
           type={"mobile"}
           setNavIsExpanded={setNavIsExpanded}
           ref={links}
         />
+        <SocialLinks />
       </nav>
 
       <div 
         className="mobile-navigation__overlay" 
         onClick={() => setNavIsExpanded(false)}
         ref={overlay}
+        aria-hidden="true"
       >
       </div>
     </div>

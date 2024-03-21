@@ -4,7 +4,7 @@ tech:
    - 'Vue'
    - 'GSAP'
 github: 'https://github.com/brianetoon/andy'
-liveUrl: '#'
+liveUrl: 'https://brianetoon.github.io/andy/'
 image: './andy-portfolio.png'
 featured: true
 position: 1

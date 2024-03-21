@@ -11,13 +11,22 @@
   overflow-x: clip;
 
   &__nav-toggle {
+    --hamburger-stroke-color: #{$site-header-color};
     position: absolute;
+    width: $fluid-size-l;
     right: $container-min-margin-inline;
     background: transparent;
-    cursor: pointer;
     z-index: 999;
     border: 0;
-    color: white;
+    cursor: pointer;
+
+    &:hover {
+      --hamburger-stroke-color: #{$site-header-color-hover};
+    }
+
+    svg {
+      fill: var(--hamburger-stroke-color);
+    }
 
     @include mq(medium) {
       display: none;
@@ -26,6 +35,7 @@
 
   &__brand {
     --logo-stroke-color: #{$site-header-color};
+    width: $fluid-size-2xl-3xl;
     z-index: 99;
     cursor: pointer;
 
@@ -34,8 +44,8 @@
     }
 
     svg {
-      width: $fluid-size-2xl-3xl;
       height: auto;
+      stroke: var(--logo-stroke-color);
     }
   }
 

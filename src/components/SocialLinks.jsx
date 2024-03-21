@@ -4,7 +4,7 @@ import IconLinkGroup from './IconLinkGroup';
 const socialLinks = [
   {
     name: 'LinkedIn',
-    url: '#'
+    url: 'https://www.linkedin.com/in/brian-toon-24394444/'
   },
   {
     name: 'GitHub',

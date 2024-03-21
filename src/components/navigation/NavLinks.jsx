@@ -2,8 +2,13 @@ import React from "react";
 import { useGSAP } from "@gsap/react";
 import { forwardRef } from "react";
 import ScrollTo from "../../animations/ScrollTo";
+import { accessibleOnClick } from "../../helpers/accessibleEventHandlers";
 
 const scrollLinks = [
+  {
+    name: "Intro",
+    target: "#hero"
+  },
   {
     name: "About",
     target: "#about"
@@ -42,7 +47,7 @@ const NavLinks = forwardRef(function NavLinks(props, ref) {
         <li 
           className="navigation-links__item" 
           key={link.name}
-          onClick={() => scroll(link.target)}
+          {...accessibleOnClick(() => scroll(link.target))}
         >
           {link.name}
         </li>

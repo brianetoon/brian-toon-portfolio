@@ -10,6 +10,7 @@ const SiteFooter = () => {
             Designed with creativity and precision by <a href="https://kaytoondesign.com/" rel="noreferrer" target="_blank">Kay Toon</a> and built with <a href="https://www.gatsbyjs.com/" rel="noreferrer" target="_blank">Gatsby</a> by me.
           </p>
           <SocialLinks />
+          <p className="text-center fs-300">Copyright Brian Toon 2024</p>
         </div>
       </div>
     </footer>
