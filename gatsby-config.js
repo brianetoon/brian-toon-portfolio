@@ -8,6 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  siteMetadata: {
+    title: "Brian Toon"
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
@@ -25,7 +28,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /src\/assets\/icons/,
+          include: /src\/assets\/(icons|images)/,
         }
       }
     },

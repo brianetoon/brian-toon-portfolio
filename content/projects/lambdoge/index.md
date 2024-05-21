@@ -10,4 +10,4 @@ featured: true
 position: 4
 ---
 
-I created a landing page for a community-driven web comic series using Vue and GSAP. My goal was to make the page fun, engaging, and easy to use, drawing readers into the series and encourage them to become part of the community.
+I got an opportunity to create a landing page for a web comic series. My goal was to make the page fun, engaging, and easy to use, drawing readers into the series and encouraging them to become part of the community.

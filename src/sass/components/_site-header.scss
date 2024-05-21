@@ -35,7 +35,7 @@
 
   &__brand {
     --logo-stroke-color: #{$site-header-color};
-    width: $fluid-size-2xl-3xl;
+    width: clamp(4.00rem, calc(2.68rem + 6.22vw), 6rem);
     z-index: 99;
     cursor: pointer;
 

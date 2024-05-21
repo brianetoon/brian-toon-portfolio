@@ -5,6 +5,11 @@
     max-width: 25rem;
     margin-inline: auto;
 
+    svg {
+      stroke: $color-neutral-900;
+      height: auto;
+    }
+
     @include mq(medium) {
       max-width: 100%;
     }

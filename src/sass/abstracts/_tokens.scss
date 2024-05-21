@@ -54,7 +54,7 @@ $body-background-color: $color-background-default;
 $link-color: $color-text-interactive-default;
 $link-color-hover: $color-text-interactive-hover;
 
-$icon-color: $color-neutral-1000;
+$icon-color: $color-neutral-900;
 
 $heading-font-family: $font-family-accent;
 $heading-color-default: $color-accent-400;
@@ -79,13 +79,13 @@ $flex-group-gap: $fluid-size-s;
 $section-padding-block: $fluid-size-2xl-3xl;
 
 $container-min-margin-inline: $fluid-size-l;
-$container-max-width: 65rem;
+$container-max-width: 68rem;
 $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
 
 // site header
 $site-header-background-color: $color-neutral-500;
-$site-header-color: $color-neutral-1000;
+$site-header-color: $color-neutral-900;
 $site-header-color-hover: $color-accent-400;
 $site-header-padding: $fluid-size-xs 0;
 $site-header-margin: 0;
@@ -110,7 +110,7 @@ $navigation-font-weight: $font-weight-semi-bold;
 $footer-background-color: $color-neutral-500;
 $footer-text-color: $color-neutral-900;
 $footer-padding: $fluid-size-m 0;
-$footer-link-color: $color-neutral-1000;
+$footer-link-color: $color-neutral-900;
 $footer-link-font-weight: $font-weight-semi-bold;
 $footer-link-color-hover: $color-accent-400;
 $footer-link-text-decoration: none;

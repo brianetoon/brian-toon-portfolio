@@ -1,31 +1,28 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import AboutImage from "../../assets/images/about.svg"
 
 export default function About() {
   return (
     <section id="about" className="about | section bg-neutral-300">
       <div className="container flow">
         <header className="section-header | flow">
-          <StaticImage 
-            src="../../assets/images/about.png"
-            alt="Line drawing of a laptop computer, desktop computer, headphones, book and a coffee mug"
-            placeholder="none"
-          />
+          <AboutImage className="drawing width-100" />
           <h2 className="heading-1">About</h2>
         </header>
         
         <div className="about__content">
           <div className="about__info | flow">
-            <p>Hi there, my name is Brian and I'm a front-end developer who's passionate about leveraging modern web technologies to create finished products that are accessible, work seamlessly and look great on any device.</p>
-            <p>I believe web development is an art form that requires both creativity and technical expertise. As a front-end developer, my strengths lie in my ability to bring ideas and designs to life as digital experiences.</p>
-            <p>My passion for this comes from the continued learning and constant growth opportunities that come with being a developer. My goal is to continue improving my skills and staying up to date with the latest technologies.</p>
+            <p>I'm a front-end developer who is passionate about utilizing modern web technologies to create finished products that are accessible, work seamlessly and look great on any device.</p>
+            <p>I've had the opportunity to create websites for a varying range of clients including local small businesses, personal portfolios, start-ups, a wedding and more. I've also recently joined a small AGILE style team that is currently developing a data-driven, stat-focused app for a game.</p>
+            <p>I love how each new project presents its own unique challenges which I embrace as a chance to grow as a developer. My goal is to continue learning and improving my skills in the ever evolving environment of web development by staying up to date with the latest technologies and to deliver the best product I can to the end user.</p>
           </div>
 
           <div className="about__portrait | border-frame">
             <StaticImage
               className="border-radius-1"
-              src="../../assets/images/napoleon.jpg"
-              alt="Portrait of Napoleon Dynamite"
+              src="../../assets/images/portrait.jpg"
+              alt="Portrait of Brian"
               placeholder="blurred"
             />
           </div>

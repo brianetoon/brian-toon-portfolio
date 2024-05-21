@@ -10,3 +10,5 @@ export default function Blog() {
     </Layout>
   )
 }
+
+export const Head = () => <title>Brian Toon | Blog</title>

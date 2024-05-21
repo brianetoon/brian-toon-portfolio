@@ -12,15 +12,18 @@ const MobileNav = ({ navIsExpanded, setNavIsExpanded }) => {
   const overlay = useRef();
 
   useGSAP(() => {
-    
+
     gsap.set(menu.current, {
       x: "100%"
     });
-
+    
     tl.current = gsap.timeline({ 
       paused: true,
       defaults: { duration: 0.25 } 
     })
+      .set(menu.current, {
+        visibility: "visible"
+      })
       .to(menu.current, {
         x: 0
       })
@@ -38,6 +41,16 @@ const MobileNav = ({ navIsExpanded, setNavIsExpanded }) => {
   useEffect(() => {
     navIsExpanded ? tl.current.play() : tl.current.reverse(); 
   }, [navIsExpanded]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (navIsExpanded && window.innerWidth >= 720) {
+        setNavIsExpanded(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [navIsExpanded, setNavIsExpanded])
 
   return (
     <div className="mobile-navigation" ref={container}>

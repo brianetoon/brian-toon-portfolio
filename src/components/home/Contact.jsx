@@ -1,5 +1,5 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import React from "react";
+import ContactImage from "../../assets/images/contact.svg";
 
 export default function Contact() {
   return (
@@ -11,11 +11,7 @@ export default function Contact() {
           <a href="mailto: brian.elliot.toon@gmail.com" className="button" data-type="accent">Email Me</a>
         </div>
         <div className="contact__image">
-          <StaticImage
-            src="../../assets/images/contact.png"
-            alt="Line drawing of a laptop computer, desktop computer, headphones, book and a coffee mug"
-            placeholder="none"
-          />
+          <ContactImage />
         </div>
       </div>
     </section>

@@ -10,4 +10,4 @@ featured: true
 position: 1
 ---
 
-I developed a dynamic and visually appealing portfolio website using Vue and GSAP. By incorporating sleek animations, I was able to enhance the user experience and bring the client’s portfolio to life. I collaborated with another developer on GitHub, where I gained experience in version control and working with a shared repository.
+I partnered with another developer on this project to turn a Figma design into a responsive and functioning website. I focused on the home page, routing and laying the groundwork for the styles. I also created animations using GSAP for an improved user experience. The finished product effectively presented the client’s work and helped them land a new job, while I gained valuable experience working on a small team and using version control on a shared GitHub repository.

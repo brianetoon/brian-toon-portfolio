@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby";
 import { useLocation } from "@reach/router";
-import Logo from "../assets/icons/logo.svg";
+import Logo from "../assets/images/logo.svg";
 import MobileNav from "./navigation/MobileNav";
 import PrimaryNav from "./navigation/PrimaryNav";
 import Hamburger from "./navigation/Hamburger";
 import ScrollTo from "../animations/ScrollTo";
 import { useGSAP } from "@gsap/react";
 import { accessibleOnClick } from "../helpers/accessibleEventHandlers";
-
 
 const SiteHeader = () => {
   const [navIsExpanded, setNavIsExpanded] = useState(false);

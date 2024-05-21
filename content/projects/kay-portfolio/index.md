@@ -9,6 +9,4 @@ featured: true
 position: 5
 ---
 
-With a focus on optimizing the loading process and showcasing the client’s work, I built this design portfolio using Vue. I used low-resolution image placeholders and lazy loading to ensure a smooth and efficient loading process and enable the use of high-quality images.
-
-The project also features modal routing, which allows users to quickly view the designs without navigating away from the main portfolio page. The end result is a seamless and user-friendly design portfolio that effectively features the client’s work and skills.
+I created a graphic design portfolio where showcasing high-resolution images was a priority. To accomplish this, I utilized low-resolution image placeholders and lazy loading. This enabled a smooth loading process while still rendering high-quality images of the client’s work. This project also features modal routing which allows users to quickly and easily view the design showcase without navigating away from the main page. The finished product is a seamless and user-friendly portfolio that effectively features the client’s work and skills.

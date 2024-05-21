@@ -1,10 +1,6 @@
-import * as React from 'react';
-import { graphql } from 'gatsby';
-import { Layout, Hero, About, Projects, Contact } from '../components';
-import '../sass/main.scss';
-import gsap from 'gsap';
-import ScrollToPlugin from "gsap/ScrollToPlugin";
-gsap.registerPlugin(ScrollToPlugin);
+import * as React from "react";
+import { graphql } from "gatsby";
+import { Layout, Hero, About, Projects, Contact } from "../components";
 
 export default function Home({ data }) {
   const projects = data.projects.nodes;
@@ -20,6 +16,8 @@ export default function Home({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => <title>Brian Toon | Portfolio</title>
 
 export const query = graphql`
   query Projects {
