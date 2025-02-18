@@ -8,14 +8,11 @@
 
   &__tech-list {
     margin-inline-start: $fluid-size-l;
+    columns: 2;
+    max-width: 20rem;
 
     li::marker {
       color: $color-accent-400;
-    }
-
-    @include mq(medium) {
-      max-width: 20rem;
-      columns: 2;
     }
   }
   

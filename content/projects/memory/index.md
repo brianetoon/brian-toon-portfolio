@@ -1,13 +1,13 @@
 ---
-title: 'Animated Memory Game'
+title: 'Memory Game'
 tech:
-   - 'React'
-   - 'GSAP'
-github: '#'
-liveUrl: '#'
+   - 'JavaScript'
+github: 'https://github.com/brianetoon/memory'
+liveUrl: 'https://brianetoon.github.io/memory/'
 image: './memory.png'
-featured: false
+featured: true
 position: 2
 ---
 
-I created an interactive memory game using React and GSAP animations. This project started as an experiment to explore the capabilities of GSAP, but quickly evolved into a fun and challenging memory game that put my skills in programming and animation to the test. The end result was a working game complete with animations.
+The goal of this project was to demonstrate understanding of the Document Object Model (DOM) in JavaScript. This was an assignment for a class and I was allowed to create any application of my choosing as long as it utilized DOM properites, methods and event driven programming. To meet these requirements, I decided to create a space themed memory game utilizing DOM based event delegation and class manipulation to "flip" cards in response to user interaction.
+

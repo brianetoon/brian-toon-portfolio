@@ -1,12 +1,12 @@
 ---
-title: 'Collaborative Portfolio Development'
+title: 'UX Showcase Portfolio'
 tech:
    - 'Vue'
    - 'GSAP'
 github: 'https://github.com/brianetoon/andy'
 liveUrl: 'https://brianetoon.github.io/andy/'
 image: './andy-portfolio.png'
-featured: true
+featured: false
 position: 1
 ---
 

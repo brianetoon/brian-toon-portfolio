@@ -7,7 +7,7 @@ const Project = ({ project }) => {
 
   return (
     <div className="project">
-      <h3 className="project__title | heading-4">{title}</h3>
+      <h3 className="project__title | heading-3">{title}</h3>
 
       <div className="project__media | flow">
         <div className="project__image | border-frame">

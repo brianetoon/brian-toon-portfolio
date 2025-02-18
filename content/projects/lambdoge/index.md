@@ -1,5 +1,5 @@
 ---
-title: 'Web Comic Landing Page'
+title: 'Lambdoge'
 tech:
    - 'Vue'
    - 'GSAP'
@@ -7,7 +7,7 @@ github: 'https://github.com/brianetoon/Lambdoge'
 liveUrl: 'https://brianetoon.github.io/Lambdoge/'
 image: './lambdoge.png'
 featured: true
-position: 4
+position: 1
 ---
 
-I got an opportunity to create a landing page for a web comic series. My goal was to make the page fun, engaging, and easy to use, drawing readers into the series and encouraging them to become part of the community.
+I got an opportunity to create a fun landing page for a web comic series called "Lambdoge". My main goal was to translate a Figma design into a responsive website that met all of the design requirements. I also used the GSAP animation library to create a sleek mobile navigation menu. 

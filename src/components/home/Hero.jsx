@@ -11,8 +11,8 @@ export default function Hero() {
         </div>
         <div className="flow">
           <h1 className="heading-1">Hi, I'm Brian</h1>
-          <p>a web developer who loves turning ideas and designs into digital experiences.</p>
-          <p>I am a front-end developer with experience in creating visually appealing, accessible and responsive websites using modern web technologies like React, Vue and Vite.</p>
+          <p>a web developer who loves turning ideas and designs into beautiful websites.</p>
+          <p>I am a web developer with experience in creating visually appealing, accessible and responsive websites using modern web technologies such as React, Vue and Vite.</p>
           <SocialLinks />
         </div>
       </div>

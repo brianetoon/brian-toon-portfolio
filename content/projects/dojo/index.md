@@ -1,12 +1,12 @@
 ---
-title: 'Revamping a Project Planner'
+title: 'The Dojo - Project Planner'
 tech:
    - 'React'
    - 'Firebase'
 github: '#'
 liveUrl: 'https://the-dojo-cc386.web.app/'
 image: './dojo.png'
-featured: true
+featured: false
 position: 3
 ---
 
