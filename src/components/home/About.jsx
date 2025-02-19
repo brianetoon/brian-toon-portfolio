@@ -14,7 +14,7 @@ export default function About() {
         <div className="about__content">
           <div className="about__info | flow">
             <p>I'm a web developer who is passionate about utilizing modern web technologies to create finished products that are accessible, work seamlessly and look great on any device.</p>
-            <p>I've had the opportunity to create websites for a varying range of clients including local small businesses, personal portfolios, start-ups, a wedding and more. I'm currently enrolled in a 16-week software engineering bootcamp focused on the MERN stack. I've also recently joined a small team startup that is currently developing a data-driven, stat-focused app called "23 Spells".</p>
+            <p>I've had the opportunity to create websites for a varying range of clients including local small businesses, personal portfolios, start-ups, a wedding and more. I'm currently enrolled in a 16-week software engineering bootcamp focused on the MERN stack. I've also recently joined a small team startup that is currently developing a data-driven, stat-focused app called 23 Spells.</p>
             <p>I love how each new project presents its own unique challenges which I embrace as a chance to grow as a developer. My goal is to continue learning and improving my skills in the ever evolving environment of web development by staying up to date with the latest technologies and to deliver the best product I can to the end user.</p>
           </div>
 
